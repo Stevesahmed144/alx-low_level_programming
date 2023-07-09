@@ -1,10 +1,16 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
+/**
+ * _abs - returns absolute value of an int
+ * @n: integer from which to get an absolute value
+ * Return: Void.
+ */
 
-int _isupper(int c)
+int _abs(int n)
 {
-    return (c >= 'A' && c <= 'Z');
+
+	if (n < 0)
+	{
+		return (n * -1);
+	}
+	return (n);
 }
